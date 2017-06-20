@@ -14,7 +14,8 @@
   "contributors": [],
   "bugs": {},
   "directories": {
-    "lib": "src"
+    "lib": "src",
+    "test": "test/"
   },
   "engines": {
     "node": ">= 6.0.0",
@@ -34,7 +35,7 @@
     "feathers-configuration": "^0.4.1",
     "feathers-errors": "^2.8.1",
     "feathers-hooks": "^2.0.1",
-    "feathers-hooks-common": "^3.5.1",
+    "feathers-hooks-common": "^3.5.5",
     "feathers-rest": "^1.7.3",
     "feathers-socketio": "^2.0.0",
     "helmet": "^3.6.1",
