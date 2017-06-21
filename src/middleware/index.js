@@ -5,7 +5,7 @@ module.exports = function () {
   const app = this; // eslint-disable-line no-unused-vars
   
   app.use(function(req, res, next) { // eslint-disable-line no-unused-vars
-    console.log(req.feathers);//undefined
+    //console.log(req.feathers);//undefined
     req.feathers.data = 'Hello world';
     next();
   });
