@@ -1,9 +1,11 @@
 // Application hooks that run for every service
 const logger = require('./hooks/logger');
 
+const test61 = require('./hooks/test-61');
+
 module.exports = {
   before: {
-    all: [],
+    all: [test61()],
     find: [],
     get: [],
     create: [],
