@@ -31,13 +31,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(favicon(path.join(app.get('public'), 'favicon.ico')));
 // Host the public folder
 app.use('/', feathers.static(app.get('public')));
-// Configure other middleware (see `middleware/index.js`)
-app.configure(middleware);
 
 // Set up Plugins and providers
 app.configure(hooks());
 app.configure(rest());
 app.configure(socketio());
+
+// Configure other middleware (see `middleware/index.js`)
+app.configure(middleware);
 
 // Set up our services (see `services/index.js`)
 app.configure(services);
